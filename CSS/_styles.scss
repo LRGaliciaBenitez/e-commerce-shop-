@@ -1,0 +1,30 @@
+@use "./base" as *;
+
+
+header {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1rem 1.3rem;
+    background-color: black;
+    @include display-flex(space-between, center, row, 0);
+
+    .header__logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .header__icons {
+        width: 120px;
+        @include display-flex(space-between, center, row, 0);
+
+        i {
+            font-size: 2rem;
+            color: white;
+            cursor: pointer;
+
+            &:hover {
+                color: #ccc;
+            }
+        }
+    }
+}
