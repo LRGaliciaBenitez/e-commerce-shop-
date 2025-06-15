@@ -1,7 +1,40 @@
+$fontSizeSubtitles: clamp(1.1rem, 1vw + 0.5rem, 1.4rem);
+$fontSizeTextSmall: clamp(0.9rem, 1vw + 0.5rem, 1.3rem);
+$fontSizeNav: clamp(1.2rem, 1vw + 0.5rem, 1.5rem);
+$tablet: 768px;
+$pc: 1024px;
+$large-pc:1200px;
+
+
 @mixin display-flex($jfValue, $aiValue, $fdValue, $gapValue) {
     display: flex;
     justify-content: $jfValue;
     align-items: $aiValue;
     flex-direction: $fdValue;
     gap: $gapValue;
+}
+
+@mixin display-grid($gridTemplateColumns, $gapValue) {
+    display: grid;
+    grid-template-columns: $gridTemplateColumns;
+    gap: $gapValue;
+    justify-items: center;
+}
+
+@mixin from($breakpoint) {
+  @if $breakpoint == tablet {
+    @media (min-width: $tablet) {
+      @content;
+    }
+  } @else if $breakpoint == pc {
+    @media (min-width: $pc) {
+      @content;
+    }
+  } @else if $breakpoint == large-pc {
+    @media (min-width: $large-pc) {
+      @content;
+    }
+  } @else {
+    @warn "El breakpoint `#{$breakpoint}` no es válido.";
+  }
 }
