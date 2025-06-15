@@ -3,12 +3,19 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- GoogleFonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
         <!-- BOOTSTRAP -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
         <!-- LINK -->
         <link rel="stylesheet" href="CSS/reset.css">
         <link rel="stylesheet" href="CSS/main.css">
-        <title>Stride Kicks Online</title>
+        <link rel="shortcut icon" href="IMG/icono.png" type="image/x-icon">
+        <!-- JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous" defer></script>
+        <script src="JS/main.js" defer></script>
+        <title>StrideKicks Online</title>
     </head>
     <body>
 
@@ -16,9 +23,156 @@
             <img src="IMG/logo_tienda.png" alt="Logo de Stride Kicks Online" class="header__logo">
             <div class="header__icons">
                 <i class="bi bi-list"></i>
-                <i class="bi bi-cart-fill"></i>
+                <div>
+                    <i class="bi bi-cart-fill"></i>
+                    <span id="contador_productos">0</span>
+                </div>
             </div>
         </header>
+
+        <main>
+
+            <section class="main__productos">
+
+                <div class="card" style="width: 18rem;">
+                    <img src="IMG/imagenes_tenis/samba.png" class="card-img-top" alt="Tenis Samba">
+                    <div class="card-body">
+                        <h5 class="card-title">Adidas Samba</h5>
+                        <p class="card-text">Diseño clásico con parte superior de cuero, refuerzo en gamuza y suela de goma para máxima tracción. Inspirados en el fútbol, perfectos para el uso diario.</p>
+                        <p class="precio__tenis">$1200</p>
+                        <a href="#" class="btn btn-primary"
+                        data-nombre="Adidas Samba"
+                        data-precio="$1200"
+                        data-img="IMG/imagenes_tenis/samba.png">Añadir al carrito</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="IMG/imagenes_tenis/new_balance550.jpeg" class="card-img-top" alt="Tenis New Balance 550">
+                    <div class="card-body">
+                        <h5 class="card-title">New Balance 550</h5>
+                        <p class="card-text">Diseño vintage con toques modernos. Cuero robusto y suela cómoda para uso urbano diario.</p>
+                        <p class="precio__tenis">$1000</p>
+                        <a href="#" class="btn btn-primary"
+                        data-nombre="New Balance 550"
+                        data-precio="$1000"
+                        data-img="IMG/imagenes_tenis/new_balance550.jpeg">Añadir al carrito</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="IMG/imagenes_tenis/AIR+FORCE+1+'07.png" class="card-img-top" alt="Tenis Air Force 1 '07">
+                    <div class="card-body">
+                        <h5 class="card-title">Tenis Air Force 1 '07</h5>
+                        <p class="card-text">Silueta icónica con parte superior de cuero, amortiguación Air y estilo versátil desde 1982.</p>
+                        <p class="precio__tenis">$1500</p>
+                        <a href="#" class="btn btn-primary"
+                        data-nombre="Tenis Air Force 1 '07"
+                        data-precio="$1500"
+                        data-img="IMG/imagenes_tenis/AIR+FORCE+1+'07.png">Añadir al carrito</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="IMG/imagenes_tenis/NIKE+DUNK+LOW+RETRO.png" class="card-img-top" alt="Tenis Nike Dunk Low Retro">
+                    <div class="card-body">
+                        <h5 class="card-title">Tenis Nike Dunk Low</h5>
+                        <p class="card-text">Estilo retro de los 80 con perfil bajo, cuero resistente y colores llamativos para un look urbano.</p>
+                        <p class="precio__tenis">$2500</p>
+                        <a href="#" class="btn btn-primary"
+                        data-nombre="Tenis Nike Dunk Low"
+                        data-precio="$2500"
+                        data-img="IMG/imagenes_tenis/NIKE+DUNK+LOW+RETRO.png">Añadir al carrito</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="IMG/imagenes_tenis/NIKE+CORTEZ.png" class="card-img-top" alt="Tenis Nike Cortez">
+                    <div class="card-body">
+                        <h5 class="card-title">Tenis Nike Cortez</h5>
+                        <p class="card-text">Estilo retro con comodidad moderna. Los Nike Cortez combinan diseño clásico y ligereza para tu día a día.</p>
+                        <p class="precio__tenis">$2000</p>
+                        <a href="#" class="btn btn-primary"
+                        data-nombre="Tenis Nike Cortez"
+                        data-precio="$2000"
+                        data-img="IMG/imagenes_tenis/NIKE+CORTEZ.png">Añadir al carrito</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="IMG/imagenes_tenis/puma_suede.avif" class="card-img-top" alt="Tenis Puma Suede">
+                    <div class="card-body">
+                        <h5 class="card-title">Tenis Puma Suede</h5>
+                        <p class="card-text">Exterior de gamuza suave, diseño minimalista y legado urbano desde los años 60.</p>
+                        <p class="precio__tenis">$1100</p>
+                        <a href="#" class="btn btn-primary"
+                        data-nombre="Tenis Puma Suede"
+                        data-precio="$1100"
+                        data-img="IMG/imagenes_tenis/puma_suede.avif">Añadir al carrito</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="IMG/imagenes_tenis/converse_chuck_taylor.jpeg" class="card-img-top" alt="Tenis Converse Chuck Taylor">
+                    <div class="card-body">
+                        <h5 class="card-title">Tenis Converse Chuck Taylor</h5>
+                        <p class="card-text">Lona resistente, puntera de goma y estética atemporal. Un ícono del calzado casual desde 1917.</p>
+                        <p class="precio__tenis">$3000</p>
+                        <a href="#" class="btn btn-primary"
+                        data-nombre="Tenis Converse Chuck Taylor"
+                        data-precio="$3000"
+                        data-img="IMG/imagenes_tenis/converse_chuck_taylor.jpeg">Añadir al carrito</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="IMG/imagenes_tenis/yeezy3.jpeg" class="card-img-top" alt="Tenis Yeezy 350 V2">
+                    <div class="card-body">
+                        <h5 class="card-title">Tenis Yeezy 350 V2</h5>
+                        <p class="card-text">Diseño futurista, tejido Primeknit y tecnología Boost para máxima comodidad y estilo.</p>
+                        <p>$5000</p>
+                        <a href="#" class="btn btn-primary"
+                        data-nombre="Tenis Yeezy 350 V2"
+                        data-precio="$5000"
+                        data-img="IMG/imagenes_tenis/yeezy3.jpeg">Añadir al carrito</a>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="main__menuLateral">
+                <div>
+                    <i class="bi bi-x" id="clMenuLat"></i>
+                </div>
+                <ul>
+                    <li>Home</li>
+                    <li>Sobre Nosotros</li>
+                    <li>Contacto</li>
+                    <li>Configuración</li>
+                    <li>Perfil</li>
+                </ul>
+            </section>
+
+            <section class="main__carrito">
+                <div class="main__carrito--container">
+                    <div class="main__carrito--containerX">
+                        <i class="bi bi-x" id="clCartComp"></i>
+                    </div>
+                    <div class="main__carrito--productos">
+                        <h2>Carrito de Compras</h2>
+                        <!-- Más productos pueden ser añadidos aquí -->
+                    </div>
+                </div>
+                <div class="main__carrito--totalContainer"> 
+                    <div class="main__carrito--total">
+                        <h3>Total: $<span id="totalCarrito">0</span></h3>
+                        <button class="btn btn-success" id="btnComprar">Pagar</button>
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
 
     </body>
 </html>
