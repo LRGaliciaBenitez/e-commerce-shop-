@@ -1,35 +1,8 @@
 # 🛒 e-shop-strideKicks
 
-Aplicación web de comercio electrónico — tienda online simple lista para mostrar productos, permitir navegación y compras (o simulación de compra), ideal para aprender / para proyectos personales.
-
----
-
-## 🧰 Tecnologías
-
-- HTML  
-- CSS / SCSS  
-- JavaScript  
-
----
-
-## 🚀 Cómo empezar / Usar localmente
-
-1. Clona este repositorio  
-   ```bash
-   git clone https://github.com/LRGaliciaBenitez/e-shop-strideKicks.git
-   
-2. Abre index.html en tu navegador.
-
-3. Explora los productos del catálogo, revisa detalles y navega por la tienda.
-
----
-
-## 📁 Estructura del proyecto
-
-# 🛒 e-shop-strideKicks
-
-Tienda web enfocada en la venta de tenis y calzado deportivo.  
-Permite visualizar productos, consultar detalles y navegar por un catálogo diseñado para simular una tienda real.
+Aplicación web de comercio electrónico enfocada en la venta de tenis y calzado deportivo.  
+Permite visualizar productos, consultar detalles, navegar por un catálogo y simular compras.  
+Ideal para fines educativos, prácticas de front-end y proyectos personales.
 
 ---
 
@@ -121,10 +94,6 @@ Permite visualizar productos, consultar detalles y navegar por un catálogo dise
 
 -Agregar filtrado por precio, categoría o tipo de tenis.
 
--Sistema de carrito completo (sumar, restar, eliminar productos).
-
--Persistencia del carrito usando localStorage.
-
 -Agregar un backend o API para productos reales.
 
 -Añadir un sistema de usuarios y autenticación.
@@ -133,49 +102,11 @@ Permite visualizar productos, consultar detalles y navegar por un catálogo dise
 
 -Agregar buscador interno de productos.
 
-## 📄 Licencia & Créditos
-
-Este proyecto es — uso libre.
-
-Creado por [Luis Galicia].
-Si deseas aportar, mejorar o expandir este proyecto, puedes contactarme, hacer fork o enviar un pull-request.
-
-
 ---
-
-## 💡 Qué hace el proyecto
-
--👟 Catálogo de productos con imágenes, nombre y precio.
-
--📄 Vista de producto con detalles adicionales (si está implementado).
-
--🛍️ Carrito de compras (si lo tienes en tu proyecto).
-
--📱 Diseño responsivo adaptado a móviles y escritorio.
-
--🧩 Código sencillo, ideal como base para un e-commerce más completo.
-
----
-
-## 🧪 Posibles mejoras / Próximos pasos
-
--Agregar filtrado por precio, categoría o tipo de tenis.
-
--Sistema de carrito completo (sumar, restar, eliminar productos).
-
--Persistencia del carrito usando localStorage.
-
--Agregar un backend o API para productos reales.
-
--Añadir un sistema de usuarios y autenticación.
-
--Mejorar la UI con animaciones, hover effects y transición en cards.
-
--Agregar buscador interno de productos.
 
 ## 📄 Licencia & Créditos
 
-Este proyecto es — uso libre.
+Este proyecto es de uso libre.
 
-Creado por [Luis Galicia].
+Creado por Luis Galicia.
 Si deseas aportar, mejorar o expandir este proyecto, puedes contactarme, hacer fork o enviar un pull-request.
