@@ -110,9 +110,7 @@ Permite visualizar productos, consultar detalles y navegar por un catálogo dise
 
 -👟 Catálogo de productos con imágenes, nombre y precio.
 
--📄 Vista de producto con detalles adicionales (si está implementado).
-
--🛍️ Carrito de compras (si lo tienes en tu proyecto).
+-🛍️ Carrito de compras.
 
 -📱 Diseño responsivo adaptado a móviles y escritorio.
 
