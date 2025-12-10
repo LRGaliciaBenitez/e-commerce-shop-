@@ -1,7 +1,6 @@
 # 🛒 e-shop-strideKicks
 
-Tienda web enfocada en la venta de tenis y calzado deportivo.  
-Permite visualizar productos, consultar detalles y navegar por un catálogo diseñado para simular una tienda real.
+Aplicación web de comercio electrónico — tienda online simple lista para mostrar productos, permitir navegación y compras (o simulación de compra), ideal para aprender / para proyectos personales.
 
 ---
 
